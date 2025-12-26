@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palette - Color Palette Generator</title>
+    <title>Support - Palette</title>
     <style>
         * {
             margin: 0;
@@ -30,8 +30,8 @@
             text-align: center;
         }
         .logo {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             background: linear-gradient(135deg, #5BA4FC 0%, #7B68EE 50%, #6B5CE7 100%);
             border-radius: 50%;
             margin: 0 auto 24px;
@@ -41,12 +41,12 @@
             box-shadow: 0 10px 30px rgba(91, 164, 252, 0.5);
         }
         .logo svg {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             fill: white;
         }
         h1 {
-            font-size: 36px;
+            font-size: 32px;
             font-weight: bold;
             margin-bottom: 12px;
             background: linear-gradient(135deg, #5BA4FC 0%, #7B68EE 100%);
@@ -54,30 +54,64 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        .tagline {
+        .subtitle {
             color: #666;
             font-size: 18px;
             margin-bottom: 40px;
         }
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-        a {
-            display: block;
-            padding: 16px 24px;
+        .support-info {
             background: #f5f5f7;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+        .support-info h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 16px;
+        }
+        .support-info p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .email-btn {
+            display: inline-block;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #5BA4FC 0%, #7B68EE 100%);
             border-radius: 12px;
             text-decoration: none;
-            color: #333;
-            font-weight: 500;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
             transition: all 0.2s;
         }
-        a:hover {
-            background: linear-gradient(135deg, #5BA4FC 0%, #7B68EE 100%);
-            color: white;
+        .email-btn:hover {
             transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(91, 164, 252, 0.4);
+        }
+        .faq {
+            text-align: left;
+            margin-top: 32px;
+        }
+        .faq h3 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .faq p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 24px;
+            color: #7B68EE;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
         }
         .footer {
             margin-top: 40px;
@@ -88,12 +122,17 @@
             .container {
                 background: #2c2c2e;
             }
-            a {
-                background: #3a3a3c;
-                color: #f5f5f7;
+            h1 {
+                -webkit-text-fill-color: #7B68EE;
             }
-            .tagline {
+            .subtitle, .support-info p, .faq p {
                 color: #a0a0a0;
+            }
+            .support-info {
+                background: #3a3a3c;
+            }
+            .support-info h2, .faq h3 {
+                color: #f5f5f7;
             }
         }
     </style>
@@ -101,17 +140,11 @@
 <body>
     <div class="container">
         <div class="logo">
-            <!-- SF Symbol: swatchpalette.fill - palette icon with vertical bars and fan shape -->
             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <!-- Left tall bar -->
                 <rect x="15" y="20" width="18" height="60" rx="4" fill="white" opacity="0.95"/>
-                <!-- Right top bar -->
                 <rect x="40" y="20" width="18" height="25" rx="4" fill="white" opacity="0.9"/>
-                <!-- Right middle bar -->
                 <rect x="40" y="50" width="18" height="15" rx="4" fill="white" opacity="0.85"/>
-                <!-- Right bottom bar -->
                 <rect x="40" y="70" width="18" height="10" rx="4" fill="white" opacity="0.8"/>
-                <!-- Fan shape (color swatches fanning out) -->
                 <g transform="translate(67, 50)">
                     <rect x="0" y="-2" width="20" height="6" rx="2" fill="white" opacity="0.75" transform="rotate(-20 0 0)"/>
                     <rect x="0" y="-2" width="20" height="6" rx="2" fill="white" opacity="0.8" transform="rotate(0 0 0)"/>
@@ -119,14 +152,24 @@
                 </g>
             </svg>
         </div>
-        <h1>Palette</h1>
-        <p class="tagline">Beautiful color palettes for designers</p>
+        <h1>Support</h1>
+        <p class="subtitle">We're here to help</p>
 
-        <div class="links">
-            <a href="support.html">Support</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
+        <div class="support-info">
+            <h2>Contact Us</h2>
+            <p>Have questions, feedback, or need help with Palette? We'd love to hear from you.</p>
+            <a href="mailto:ariellalabs@protonmail.com" class="email-btn">Email Support</a>
         </div>
+
+        <div class="faq">
+            <h3>Response Time</h3>
+            <p>We typically respond within 24-48 hours.</p>
+
+            <h3>What to Include</h3>
+            <p>Please include your device model, iOS version, and a description of your issue or feedback.</p>
+        </div>
+
+        <a href="index.html" class="back-link">Back to Home</a>
 
         <p class="footer">© 2025 Palette</p>
     </div>
