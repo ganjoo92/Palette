@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Palette</title>
+    <title>Privacy Policy - Palette - Color Designer</title>
     <style>
         * {
             margin: 0;
@@ -31,21 +31,12 @@
             gap: 16px;
             margin-bottom: 8px;
         }
-        .logo {
+        .logo-img {
             width: 50px;
             height: 50px;
-            background: linear-gradient(135deg, #5BA4FC 0%, #7B68EE 50%, #6B5CE7 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border-radius: 12px;
             box-shadow: 0 4px 12px rgba(91, 164, 252, 0.4);
             flex-shrink: 0;
-        }
-        .logo svg {
-            width: 24px;
-            height: 24px;
-            fill: white;
         }
         h1 {
             font-size: 32px;
@@ -78,6 +69,9 @@
         li {
             margin-bottom: 8px;
         }
+        a {
+            color: #5BA4FC;
+        }
         @media (prefers-color-scheme: dark) {
             body {
                 background-color: #1c1c1e;
@@ -98,117 +92,188 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 5.5C3 4.12 4.12 3 5.5 3h3C9.88 3 11 4.12 11 5.5v13c0 1.38-1.12 2.5-2.5 2.5h-3C4.12 21 3 19.88 3 18.5v-13z"/>
-                    <path d="M13 5.5c0-1.38 1.12-2.5 2.5-2.5h3C19.88 3 21 4.12 21 5.5v5c0 1.38-1.12 2.5-2.5 2.5h-3c-1.38 0-2.5-1.12-2.5-2.5v-5z"/>
-                    <path d="M13 15.5c0-1.38 1.12-2.5 2.5-2.5h3c1.38 0 2.5 1.12 2.5 2.5v3c0 1.38-1.12 2.5-2.5 2.5h-3c-1.38 0-2.5-1.12-2.5-2.5v-3z"/>
-                </svg>
-            </div>
+            <img src="app-icon.png" alt="Palette App Icon" class="logo-img">
             <h1>Privacy Policy</h1>
         </div>
         <p class="last-updated">Last updated: January 28, 2026</p>
 
         <section>
             <h2>Introduction</h2>
-            <p>Palette ("we", "our", or "the App") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our color palette generation application.</p>
+            <p>Palette - Color Designer ("the App") is developed and operated by Ariella App Labs ("we", "us", or "our"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our color palette generation application.</p>
+            <p>By using the App, you agree to the collection and use of information in accordance with this policy.</p>
         </section>
 
         <section>
             <h2>Information We Collect</h2>
-            <p>When you choose to create an account, we collect:</p>
+            <p><strong>Account Information:</strong> When you choose to create an account, we collect:</p>
             <ul>
-                <li>Email address (for account identification)</li>
+                <li>Email address (for account identification and communication)</li>
                 <li>Display name (optional, for personalization)</li>
-                <li>Authentication provider (Apple or Google sign-in)</li>
+                <li>Authentication provider identifier (Apple, Google, or Email sign-in)</li>
                 <li>Account creation date</li>
             </ul>
-            <p>This information is used solely to provide account functionality and sync your data across devices.</p>
+            <p><strong>Purchase Information:</strong> When you make an in-app purchase, Apple and our payment processor (RevenueCat) collect transaction data. We receive only a record of your purchase status to unlock premium features.</p>
+            <p><strong>Automatically Collected:</strong> We do NOT automatically collect device identifiers, IP addresses, or usage analytics.</p>
         </section>
 
         <section>
             <h2>Information We DON'T Collect</h2>
-            <p>Palette is designed with privacy in mind:</p>
+            <p>Palette is designed with privacy as a core principle:</p>
             <ul>
-                <li>We do NOT track your usage or analytics</li>
-                <li>We do NOT use cookies or tracking technologies</li>
-                <li>We do NOT sell or share your data with third parties for advertising</li>
-                <li>We do NOT access your photo library beyond color extraction</li>
+                <li>We do NOT track your usage behavior or collect analytics</li>
+                <li>We do NOT use cookies or similar tracking technologies</li>
+                <li>We do NOT sell, rent, or share your personal data with third parties for advertising or marketing</li>
+                <li>We do NOT access your photo library beyond the specific images you select for color extraction</li>
+                <li>We do NOT collect location data</li>
+                <li>We do NOT create advertising profiles</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How We Use Your Information</h2>
+            <p>We use the information we collect solely for:</p>
+            <ul>
+                <li>Providing and maintaining your account</li>
+                <li>Enabling account-based features and preferences</li>
+                <li>Processing and managing your in-app purchases</li>
+                <li>Responding to your support requests</li>
+                <li>Sending important service-related communications</li>
             </ul>
         </section>
 
         <section>
             <h2>Local Data Storage</h2>
-            <p>Most data is stored locally on your device:</p>
+            <p>Most of your data is stored locally on your device:</p>
             <ul>
-                <li>Color palettes you save</li>
+                <li>Color palettes you create and save</li>
                 <li>Your favorite palettes</li>
                 <li>App preferences and settings</li>
                 <li>Palette generation history</li>
             </ul>
-            <p>If you sign in with an account, your palettes may be synced to provide backup and cross-device access.</p>
+            <p>This data remains on your device only. We do not sync or backup your palettes to any cloud server. If you uninstall the App, your local data will be lost.</p>
         </section>
 
         <section>
             <h2>Photos Access</h2>
-            <p>If you choose to use the color extraction feature, the App will request access to your photo library. This access is used solely to:</p>
+            <p>The App may request access to your photo library for the color extraction feature. This access is used exclusively to:</p>
             <ul>
                 <li>Allow you to select photos for color extraction</li>
-                <li>Extract dominant colors from the selected photo</li>
+                <li>Extract dominant colors from your selected photos</li>
             </ul>
-            <p>Photos are processed locally on your device. We do not upload, store, or transmit your photos anywhere.</p>
+            <p><strong>Important:</strong> All photo processing occurs locally on your device. We do not upload, store, transmit, or have access to your photos on any server.</p>
         </section>
 
         <section>
             <h2>Third-Party Services</h2>
-            <p>We use the following third-party services:</p>
+            <p>We use the following third-party services to operate the App:</p>
             <ul>
-                <li><strong>Firebase Authentication:</strong> To securely manage user accounts and sign-in (Apple Sign-In, Google Sign-In, Email/Password)</li>
-                <li><strong>RevenueCat:</strong> To process in-app purchases and manage entitlements. RevenueCat may collect anonymous purchase data to provide this functionality.</li>
-                <li><strong>Google Sign-In:</strong> To enable authentication via Google accounts</li>
+                <li><strong>Firebase Authentication (Google):</strong> To securely manage user accounts and sign-in. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
+                <li><strong>RevenueCat:</strong> To process in-app purchases and manage subscription entitlements. RevenueCat may collect anonymous, aggregated purchase data. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
+                <li><strong>Apple Sign-In:</strong> To enable secure authentication via Apple ID. <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
+                <li><strong>Google Sign-In:</strong> To enable authentication via Google accounts. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
             </ul>
-            <p>These services have their own privacy policies. We encourage you to review them.</p>
+            <p>These services operate under their own privacy policies, which we encourage you to review.</p>
         </section>
 
         <section>
-            <h2>Children's Privacy</h2>
-            <p>Palette is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us.</p>
+            <h2>Data Retention</h2>
+            <p>We retain your personal information only for as long as necessary:</p>
+            <ul>
+                <li><strong>Account data:</strong> Retained until you delete your account</li>
+                <li><strong>Local data:</strong> Retained on your device until you delete it or uninstall the App</li>
+                <li><strong>Purchase records:</strong> Retained as required for legal and accounting purposes</li>
+            </ul>
+            <p>When you delete your account, we immediately delete your personal data from our systems. Your Firebase authentication record is deleted instantly, and all local app data is cleared from your device. In rare cases where immediate deletion fails due to technical issues, deletion will be completed within 30 days.</p>
         </section>
 
         <section>
-            <h2>Data Security</h2>
-            <p>We take data security seriously:</p>
-            <ul>
-                <li>Local data is protected by iOS encryption and your device passcode</li>
-                <li>Account authentication uses industry-standard OAuth 2.0</li>
-                <li>We use HTTPS for all network communications</li>
-            </ul>
-            <p>We recommend keeping your device secure with a strong passcode.</p>
+            <h2>International Data Transfers</h2>
+            <p>Your information may be transferred to and processed in countries other than your own, including the United States, where our third-party service providers (Firebase, RevenueCat) maintain servers.</p>
+            <p>These transfers are necessary to provide our services and are conducted in compliance with applicable data protection laws.</p>
         </section>
 
         <section>
             <h2>Your Rights</h2>
-            <p>You have complete control over your data:</p>
+            <p>You have the following rights regarding your personal data:</p>
             <ul>
-                <li>You can delete all saved palettes at any time</li>
-                <li>You can clear your history from the Profile tab</li>
-                <li>You can delete your account and all associated data from the Profile tab</li>
-                <li>You can delete the App to remove all local data</li>
-                <li>You can revoke photo library access in iOS Settings</li>
+                <li><strong>Access:</strong> Request a copy of the personal data we hold about you</li>
+                <li><strong>Rectification:</strong> Request correction of inaccurate personal data</li>
+                <li><strong>Erasure:</strong> Request deletion of your personal data</li>
+                <li><strong>Portability:</strong> Request your data in a portable format</li>
+                <li><strong>Objection:</strong> Object to certain processing of your data</li>
+                <li><strong>Withdraw Consent:</strong> Withdraw consent at any time where processing is based on consent</li>
             </ul>
-            <p>Account deletion permanently removes all your data from our systems.</p>
+            <p>To exercise any of these rights, contact us at <a href="mailto:ariellalabs@protonmail.com">ariellalabs@protonmail.com</a>.</p>
+        </section>
+
+        <section>
+            <h2>Your Choices</h2>
+            <p>You have control over your data:</p>
+            <ul>
+                <li>Delete all saved palettes at any time within the App</li>
+                <li>Clear your palette history from the Profile tab</li>
+                <li>Delete your account and all associated data from the Profile tab</li>
+                <li>Uninstall the App to remove all local data</li>
+                <li>Revoke photo library access in iOS Settings > Privacy > Photos</li>
+                <li>Use the App without creating an account (limited features)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>For Users in the European Economic Area (EEA)</h2>
+            <p>If you are in the EEA, you have additional rights under the General Data Protection Regulation (GDPR):</p>
+            <ul>
+                <li>We process your data based on: (a) your consent, (b) performance of our contract with you, or (c) our legitimate interests</li>
+                <li>You may lodge a complaint with your local data protection authority</li>
+                <li>You may request restriction of processing in certain circumstances</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>For Users in California (USA)</h2>
+            <p>California residents have additional rights under the California Consumer Privacy Act (CCPA):</p>
+            <ul>
+                <li><strong>Right to Know:</strong> What personal information we collect and how we use it</li>
+                <li><strong>Right to Delete:</strong> Request deletion of your personal information</li>
+                <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your rights</li>
+            </ul>
+            <p>We do NOT sell personal information to third parties.</p>
+        </section>
+
+        <section>
+            <h2>Children's Privacy</h2>
+            <p>Palette is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:ariellalabs@protonmail.com">ariellalabs@protonmail.com</a>, and we will delete such information.</p>
+        </section>
+
+        <section>
+            <h2>Data Security</h2>
+            <p>We implement appropriate technical and organizational measures to protect your data:</p>
+            <ul>
+                <li>Local data is protected by iOS device encryption</li>
+                <li>Authentication uses industry-standard OAuth 2.0 protocols</li>
+                <li>All network communications use HTTPS/TLS encryption</li>
+                <li>We limit access to personal data to those who need it</li>
+            </ul>
+            <p>While we strive to protect your data, no method of transmission or storage is 100% secure. We cannot guarantee absolute security.</p>
         </section>
 
         <section>
             <h2>Changes to This Policy</h2>
-            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
-            <p>You are advised to review this Privacy Policy periodically for any changes.</p>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
+            <ul>
+                <li>Posting the new Privacy Policy on this page</li>
+                <li>Updating the "Last updated" date</li>
+                <li>Sending an in-app notification for significant changes</li>
+            </ul>
+            <p>We encourage you to review this Privacy Policy periodically.</p>
         </section>
 
         <section>
             <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us through the App's settings page.</p>
-            <p>We're committed to protecting your privacy and will be happy to address any concerns you may have.</p>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+            <p><strong>Ariella App Labs</strong><br>
+            Email: <a href="mailto:ariellalabs@protonmail.com">ariellalabs@protonmail.com</a></p>
+            <p>We will respond to your inquiry within 30 days.</p>
         </section>
     </div>
 </body>
