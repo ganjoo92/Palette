@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Palette - Color Designer</title>
+    <title>Privacy Policy - Palette - Color Palettes</title>
     <style>
         * {
             margin: 0;
@@ -95,11 +95,11 @@
             <img src="app-icon.png" alt="Palette App Icon" class="logo-img">
             <h1>Privacy Policy</h1>
         </div>
-        <p class="last-updated">Last updated: March 21, 2026</p>
+        <p class="last-updated">Last updated: June 14, 2026</p>
 
         <section>
             <h2>Introduction</h2>
-            <p>Palette - Color Designer ("the App") is developed and operated by Ariella App Labs ("we", "us", or "our"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our color palette generation application.</p>
+            <p>Palette - Color Palettes ("the App") is developed and operated by Ariella App Labs ("we", "us", or "our"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our color palette generation application.</p>
             <p>By using the App, you agree to the collection and use of information in accordance with this policy.</p>
         </section>
 
@@ -120,7 +120,9 @@
                 <li>Monetization events (e.g., paywall views, trial starts, purchases)</li>
                 <li>App engagement properties (e.g., subscription status, engagement level, days since install)</li>
             </ul>
-            <p>If you are signed in, analytics data may be linked to your account to help us understand usage patterns. If you are not signed in, this data is anonymous. Analytics data is never used for advertising or shared with third parties for marketing.</p>
+            <p>When you are signed in, a Firebase User ID is explicitly associated with your analytics session, linking your usage events (palette generation, exports, paywall views, etc.) to your account identity. This helps us understand how real users engage with the App over time. When you are not signed in or use the App as a guest, no user ID is set and all analytics data is fully anonymous. Analytics data is never used for advertising or shared with third parties for marketing.</p>
+            <p><strong>Crash Reports & Diagnostics:</strong> We use Firebase Crashlytics to collect crash reports and diagnostic data when the App encounters an error. This includes device model, iOS version, app version, and error stack traces. No personally identifiable information is intentionally included in crash reports. This data is used solely to identify and fix bugs. Crashlytics data collection is controlled by the same "Anonymous analytics" toggle in Settings that controls Firebase Analytics — disabling that toggle stops both immediately.</p>
+            <p><strong>Brand Audit Data:</strong> When you use the Brand Audit feature to analyze a website's color palette, you enter a URL into the App. The website content (colors, typography, accessibility data) is processed locally on your device via an in-app browser; no page content, images, or personal data from the audited site is transmitted to our servers. The hostname only (e.g. "example.com" — not the full URL or any path) is logged as a Firebase Analytics event parameter to help us understand feature usage. Brand Audit hostname logging is gated by the same "Anonymous analytics" toggle.</p>
         </section>
 
         <section>
@@ -176,6 +178,7 @@
             <ul>
                 <li><strong>Firebase Authentication (Google):</strong> To securely manage user accounts and sign-in. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
                 <li><strong>Firebase Analytics (Google):</strong> To collect anonymous, aggregated usage data to improve the App experience. No personally identifiable information is collected. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
+                <li><strong>Firebase Crashlytics (Google):</strong> To collect crash reports and diagnostic data (stack traces, device model, iOS version, app version) when the App encounters an error. Used only to identify and fix bugs. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
                 <li><strong>RevenueCat:</strong> To process in-app purchases and manage subscription entitlements. RevenueCat may collect anonymous, aggregated purchase data. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
                 <li><strong>Apple Sign-In:</strong> To enable secure authentication via Apple ID. <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
                 <li><strong>Google Sign-In:</strong> To enable authentication via Google accounts. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
@@ -218,6 +221,7 @@
             <h2>Your Choices</h2>
             <p>You have control over your data:</p>
             <ul>
+                <li>Disable analytics and crash reporting by toggling off "Anonymous analytics" in Settings → Preferences. This stops Firebase Analytics + Firebase Crashlytics data collection immediately.</li>
                 <li>Delete all saved palettes at any time within the App</li>
                 <li>Clear your palette history from the Profile tab</li>
                 <li>Delete your account and all associated data from the Profile tab</li>
